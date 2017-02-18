@@ -7,7 +7,7 @@ Simple docker configuration for [Jenkins](https://jenkins.io/) and [SonarQube](h
 1. Clone this repository;
 2. Run:
 ```
-docker compose up
+docker-compose up
 ```
 
 ### Configure SonarQube
@@ -16,7 +16,7 @@ docker compose up
 3. Install the following plugins:
  * *Git*
  * *Java*
-4. Navigate to  *Administration -> My Account -> Security* and generate server authentication token
+4. Navigate to  *Administrator -> My Account -> Security* and generate server authentication token
 5. Access Jenkins at *localhost:8080*
 
 ### Configure Jenkins
@@ -28,5 +28,5 @@ docker compose up
 4. Check *Install automatically* for SonarQube Scanner and Maven installations
 5. Navigate to *Jenkins -> Manage Jenkins -> Configure System*
 6. In *SonarQube servers* section specify *http://sonarqube:9000* as a *Server URL* and *Server authentication token*
-7. Create your projects and have fun.
+7. Create your projects (use `/var/jenkins_home/workspace/$JOB_NAME/` as path in job configuration) and have fun.
 
