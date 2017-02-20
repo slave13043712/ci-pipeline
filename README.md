@@ -1,7 +1,7 @@
 # Jenkins Docker Configuration
 
 ## Overview
-Simple docker configuration for [Jenkins](https://jenkins.io/) and [SonarQube](https://www.sonarqube.org/).
+Simple [docker](https://www.docker.com/) configuration for [Jenkins](https://jenkins.io/) and [SonarQube](https://www.sonarqube.org/).
 
 ## Getting Started
 1. Clone this repository;
